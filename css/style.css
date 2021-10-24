@@ -343,16 +343,22 @@ template {
 
 body {
   font-family: "Red Hat Display", sans-serif;
+  height: 100vh;
   background-color: #e0e8ff;
   background-image: url(../images/pattern-background-mobile.svg);
   background-size: 100% 20%;
   background-position: top;
   background-repeat: no-repeat;
-  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+@media (min-width: 1200px) {
+  body {
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-size: 100% 40%;
+  }
 }
 
 .card {
@@ -361,6 +367,7 @@ body {
   border-radius: 1.25rem;
   color: #1f2f56;
   box-shadow: 0 1rem 1rem #e0e8ff;
+  max-width: 327px;
 }
 .card__header {
   background-image: url(../images/illustration-hero.svg);
@@ -395,6 +402,11 @@ body {
 .card__plan-details {
   font-size: 14px;
 }
+@media (min-width: 1200px) {
+  .card__plan-details {
+    font-size: 16px;
+  }
+}
 .card__plan-details-title {
   font-weight: 900;
   margin-bottom: 2px;
@@ -408,6 +420,16 @@ body {
   font-weight: 700;
   font-size: 14px;
 }
+@media (min-width: 1200px) {
+  .card__plan-link {
+    font-size: 16px;
+    transition: opacity 0.3s;
+  }
+  .card__plan-link:hover {
+    opacity: 0.5;
+    transition: opacity 0.3s;
+  }
+}
 
 .button {
   display: block;
@@ -415,17 +437,34 @@ body {
   border-radius: 0.7rem;
   font-size: 14px;
 }
+@media (min-width: 1200px) {
+  .button {
+    font-size: 16px;
+    cursor: pointer;
+  }
+}
 .button--primary {
   background-color: #3829e0;
   font-weight: 900;
   color: #f5f7ff;
   box-shadow: 0 1rem 1rem #e0e8ff;
   margin-bottom: 0.5rem;
+  opacity: 1;
+  transition: opacity 0.3s;
+}
+.button--primary:hover {
+  opacity: 0.5;
+  transition: opacity 0.3s;
 }
 .button--secondary {
   color: #7280a7;
   font-weight: 900;
   padding-bottom: 0;
+  transition: color 0.3s;
+}
+.button--secondary:hover {
+  color: #1f2f56;
+  transition: color 0.3s;
 }
 
 .attribution {
