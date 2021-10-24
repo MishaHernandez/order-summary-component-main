@@ -54,68 +54,33 @@ body {
         padding-top: .5rem;
         padding-bottom: .5rem;
         margin-bottom: 1.5rem;
-    }
-    &__plan-details {
-        font-size: 14px;
-        @include desktop-up {
-            font-size: $fs;
-        }
-        &-title {
-            font-weight: 900;
-            margin-bottom: 2px;
-        }
-        &-price {
-            color: $desaturated-blue;
-            margin-top: 2px;
-        }
-    }
-    &__plan-link {
-        color: $bright-blue;
-        font-weight: 700;
-        font-size: 14px;
-        @include desktop-up {
-            font-size: $fs;
-            transition: opacity .3s;
-            &:hover {
-                opacity: .5;
-                transition: opacity .3s;
+        
+        &-details {
+            font-size: 14px;
+            @include desktop-up {
+                font-size: $fs;
+            }
+            &-title {
+                font-weight: 900;
+                margin-bottom: 2px;
+            }
+            &-price {
+                color: $desaturated-blue;
+                margin-top: 2px;
             }
         }
-    }
-}
-
-.button {
-    display: block;
-    padding: 1rem 1.5rem;
-    border-radius: 0.7rem;
-    font-size: 14px;
-    @include desktop-up {
-        font-size: $fs;
-        cursor: pointer;
-        
-    }
-
-    &--primary {
-        background-color: $bright-blue;
-        font-weight: 900;
-        color: $very-pale-blue;
-        box-shadow: 0 1rem 1rem $pale-blue;
-        margin-bottom: .5rem;
-        opacity: 1;
-        transition: opacity .3s;
-        &:hover {
-            opacity: .5;
-            transition: opacity .3s;
-        }
-    }
-    &--secondary {
-        color: $desaturated-blue;
-        font-weight: 900;
-        padding-bottom: 0;
-        transition: color .3s;
-        &:hover {
-            color: $dark-blue;
-            transition: color .3s;
+        &-link {
+            color: $bright-blue;
+            font-weight: 700;
+            font-size: 14px;
+            @include desktop-up {
+                font-size: $fs;
+                transition: opacity .3s;
+                &:hover {
+                    opacity: .5;
+                    transition: opacity .3s;
+                }
+            }
         }
     }
 }
