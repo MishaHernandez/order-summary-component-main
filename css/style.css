@@ -344,6 +344,10 @@ template {
 body {
   font-family: "Red Hat Display", sans-serif;
   background-color: #e0e8ff;
+  background-image: url(../images/pattern-background-mobile.svg);
+  background-size: 100% 20%;
+  background-position: top;
+  background-repeat: no-repeat;
   height: 100vh;
   display: flex;
   align-items: center;
@@ -352,40 +356,76 @@ body {
 }
 
 .card {
-  width: 80%;
-  background-color: #f5f7ff;
+  width: 85%;
+  background-color: white;
   border-radius: 1.25rem;
+  color: #1f2f56;
+  box-shadow: 0 1rem 1rem #e0e8ff;
+}
+.card__header {
+  background-image: url(../images/illustration-hero.svg);
+  background-size: cover;
+  height: 10rem;
+  border-top-left-radius: 1.25rem;
+  border-top-right-radius: 1.25rem;
 }
 .card__body {
   text-align: center;
   padding: 1.56rem;
+  line-height: 1.5;
+}
+.card__title {
+  font-weight: 900;
+  margin-top: 4px;
+  margin-bottom: 4px;
 }
 .card__intro {
   color: #7280a7;
 }
+.card__plan {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 0.7rem;
+  background-color: #f5f7ff;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+.card__plan-details {
+  font-size: 14px;
+}
 .card__plan-details-title {
-  font-weight: 700;
+  font-weight: 900;
+  margin-bottom: 2px;
 }
 .card__plan-details-price {
   color: #7280a7;
+  margin-top: 2px;
 }
 .card__plan-link {
   color: #3829e0;
+  font-weight: 700;
+  font-size: 14px;
 }
 
 .button {
   display: block;
   padding: 1rem 1.5rem;
   border-radius: 0.7rem;
+  font-size: 14px;
 }
 .button--primary {
   background-color: #3829e0;
-  font-weight: 700;
+  font-weight: 900;
   color: #f5f7ff;
+  box-shadow: 0 1rem 1rem #e0e8ff;
+  margin-bottom: 0.5rem;
 }
 .button--secondary {
   color: #7280a7;
-  font-weight: 700;
+  font-weight: 900;
+  padding-bottom: 0;
 }
 
 .attribution {
