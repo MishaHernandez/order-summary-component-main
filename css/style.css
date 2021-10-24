@@ -341,4 +341,59 @@ template {
   display: none;
 }
 
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-color: #e0e8ff;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card {
+  width: 80%;
+  background-color: #f5f7ff;
+  border-radius: 1.25rem;
+}
+.card__body {
+  text-align: center;
+  padding: 1.56rem;
+}
+.card__intro {
+  color: #7280a7;
+}
+.card__plan-details-title {
+  font-weight: 700;
+}
+.card__plan-details-price {
+  color: #7280a7;
+}
+.card__plan-link {
+  color: #3829e0;
+}
+
+.button {
+  display: block;
+  padding: 1rem 1.5rem;
+  border-radius: 0.7rem;
+}
+.button--primary {
+  background-color: #3829e0;
+  font-weight: 700;
+  color: #f5f7ff;
+}
+.button--secondary {
+  color: #7280a7;
+  font-weight: 700;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution__link-fm, .attribution__link-author {
+  color: #3e52a3;
+}
+
 /*# sourceMappingURL=style.css.map */
