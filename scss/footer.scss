@@ -1,6 +1,8 @@
 .attribution { 
     font-size: 11px;
     text-align: center;
+    position: fixed;
+    bottom: 20px;
 
     &__link-fm, &__link-author{
         color: hsl(228, 45%, 44%);

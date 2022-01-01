@@ -470,6 +470,8 @@ body {
 .attribution {
   font-size: 11px;
   text-align: center;
+  position: fixed;
+  bottom: 20px;
 }
 .attribution__link-fm, .attribution__link-author {
   color: #3e52a3;
